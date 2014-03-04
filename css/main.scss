@@ -1,0 +1,678 @@
+/*! ===========================================================================
+ * Project: Asissind
+ * Client: WithInn
+ * Author: Dunp Scpl 
+ * Author e-mail: info@dunp.it
+============================================================================ */
+
+
+
+
+
+/* sass includes
+============================================================================ */
+
+@import 'vendor/bullframe';
+@import 'vendor/custom-bootstrap';
+@import 'vendor/flexslider';
+@import 'vendor/jquery-ui-custom';
+// @import 'vendor/animate';
+@import 'vendor/font-awesome';
+@media screen and (min-width: 1px) {
+  @import '//fonts.googleapis.com/css?family=Ubuntu';
+}
+
+
+
+/* primary colors
+============================================================================ */
+
+$primary-color: #F7921E; /* orange */
+$primary-bg-color: #DEDEDE; /* light grey */
+
+
+
+
+
+/* skin
+============================================================================ */
+
+html {
+  background-color: #f0f0f0;
+  font-size: 62.5%;
+}
+
+body,
+pre, 
+code, 
+kbd, 
+samp {
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5
+h5,
+.h6
+h6 {
+  margin-top: 0;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: $primary-color;
+}
+
+html,
+button,
+.btn,
+input,
+select,
+textarea {
+  color: #555;
+}
+
+a {
+  color: #555;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.35);
+}
+
+a:hover,
+a:focus {
+  color: #555;
+} 
+
+p {
+  margin-top: 0;
+}
+
+
+/* forms
+--------------------------------------------------------------------------- */
+
+input[type="color"], 
+input[type="email"], 
+input[type="number"], 
+input[type="password"], 
+input[type="tel"], 
+input[type="search"],
+input[type="text"], 
+input[type^="date"],
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="time"], 
+input[type="url"],
+select,
+textarea {
+  border-color: #ccc;
+}
+
+
+input[type="color"]:focus, 
+input[type="email"]:focus, 
+input[type="number"]:focus, 
+input[type="password"]:focus, 
+input[type="tel"]:focus, 
+input[type="search"]:focus,
+input[type="text"]:focus, 
+input[type^="date"]:focus,
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+input[type="time"]:focus, 
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  border-color: $primary-color;
+  outline: 0;
+  box-shadow: 
+  inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+  0 0 8px rgba(247,146,30, 0.6);
+}
+
+button,
+.btn,
+input,
+select,
+textarea {
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, background-color ease-in-out 0.15s;
+}
+
+::-moz-selection {
+  background: #ccc;
+}
+
+::selection { 
+  background: #ccc;
+}
+
+
+
+/* grid
+============================================================================ */
+
+// avoid responsiveness
+.container-fixed {
+  width: 970px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// add very top padding
+body > .container:first-child {
+  padding-top: 20px;
+}
+
+
+
+
+/* header
+============================================================================ */
+
+
+/* quick links top bar 
+--------------------------------------------------------------------------- */
+
+.quick-links {
+  font-size: 11px;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.quick-links li {
+  margin-right: 0;
+}
+
+.quick-links li a {
+  border-left: 1px solid #ccc;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.quick-links li:first-child a {
+  border-left: 0;
+}
+
+.quick-links li:last-child a {
+  padding-right: 0;
+}
+
+.quick-links li a.selected {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.container-logo {
+  margin-bottom: 20px;
+}
+
+.container-logo h1 {
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 54px;
+}
+
+.container-logo img {
+  margin-right: 10px;
+}
+
+.container-header-social {
+  line-height: 54px;
+  margin-bottom: 20px;
+}
+
+.container-header-social .fa {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-size: 15px;
+  font-size: 1.5rem;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  transition: all .25s ease-out;
+}
+
+.container-header-social a:hover > .fa,
+.container-header-social a:focus > .fa {
+  border-color: #444;
+  color: #444;
+}
+
+
+
+/* bootstrap navbar
+--------------------------------------------------------------------------- */
+
+.container-navigation {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-withinn {
+  background-color: #fff;
+  border-radius: 0;
+  min-height: 0;
+  margin-bottom: 0;
+  border: 0;
+}
+
+.navbar-withinn .navbar-nav {
+  margin: 0 !important;
+}
+
+.navbar-nav > li {
+  float: left;
+}
+
+.navbar-withinn a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #333;
+}
+
+.nav > li > a {
+  padding: 18px 28px;
+}
+
+// codrops circle effect
+.nav > li a::before,
+.nav > li a::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  border: 2px solid rgba(0,0,0,0.125);
+  border-radius: 50%;
+  content: '';
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+  transform: translateX(-50%) translateY(-50%) scale(0.2);
+}
+
+.nav > li a::after {
+  width: 35px;
+  height: 35px;
+  border-width: 4px;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+.nav > li > a.selected::before,
+.nav > li > a.selected::after,
+.nav > li a:hover::before,
+.nav > li a:hover::after,
+.nav > li a:focus::before,
+.nav > li a:focus::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+.dropdown-menu {
+  min-width: 139px;
+}
+
+// avoid circle effect on dropdown items
+.nav .dropdown-menu > li a:hover::before,
+.nav .dropdown-menu > li a:hover::after,
+.nav .dropdown-menu > li a:focus::before,
+.nav .dropdown-menu > li a:focus::after {
+  display: none;
+}
+
+.dropdown-menu > li > a {
+  padding: 5px 15px;
+  text-transform: lowercase;
+}
+
+
+/* booking engine toggle
+--------------------------------------------------------------------------- */
+
+.container-navigation .booking-engine-toggle {
+  width: 37px;
+  height: 54px;
+}
+
+.container-navigation .booking-engine-toggle,
+.container-navigation .booking-engine-toggle:hover,
+.container-navigation .booking-engine-toggle:focus {
+  padding: 0 10px 0 25px;
+  box-sizing: content-box;
+  margin: 0;
+  border-radius: 0;
+  color: $primary-color;
+  box-shadow: none;
+  border: 0;
+  border-right: 1px solid #ccc;
+  vertical-align: middle;
+  text-shadow: none;
+}
+
+.container-navigation .booking-engine-toggle,
+.container-navigation .booking-engine-toggle:hover,
+.container-navigation .booking-engine-toggle:focus {
+  background: transparent url(../img/booking-hamburger.png) no-repeat 20px center;
+}
+
+.container-navigation .booking-engine-toggle:hover,
+.container-navigation .booking-engine-toggle:focus {
+  background-color: #f0f0f0;
+}
+
+.container-navigation .booking-engine-toggle.focused {
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, .2);
+}
+
+
+
+
+
+
+/* home banner
+============================================================================ */
+
+.container-banner {
+  background-color: $primary-color;
+}
+
+.container-booking-widget {
+  width: 300px;
+  float: left;
+  height: 350px;
+  overflow: hidden;
+  background: #dedede url(../img/bg-booking-widget.png) no-repeat right bottom;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.container-booking-widget .row,
+.container-booking-widget [class*="col-xs"] {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.container-booking-widget .legend {
+  display: block;
+  padding: 8px 15px;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  color: $primary-color;
+  font-size: 16px;
+  font-size: 1.6rem;
+  background-color: #fff;
+  text-transform: lowercase;
+}
+
+.container-booking-form {
+  padding: 15px;
+}
+
+.container-booking-form input,
+.container-booking-form select {
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+.container-booking-widget label {
+  font-weight: 400;
+  margin: 0;
+  font-size: 11px;
+  font-size: 1.1rem;
+  color: #777;
+  max-width: 100%; // force IE8+ to break text!
+}
+
+.container-booking-widget input::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.container-booking-widget input:-moz-placeholder {
+  font-style: italic;
+}
+
+.container-booking-widget input::-moz-placeholder{
+  font-style: italic;
+}
+
+.container-booking-widget input:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.container-booking-widget input:placeholder {
+  font-style: italic;
+}
+
+.container-booking-widget input.placeholder {
+  font-style: italic;
+}
+
+.container-booking-widget label a {
+  text-decoration: underline;
+  color: #777;
+}
+
+.container-booking-widget input[type="text"],
+.container-booking-widget select {
+  padding: 5px;
+}
+
+.container-booking-widget label a:hover,
+.container-booking-widget label a:focus {
+  color: #444;
+}
+
+.container-booking-widget input.btn-primary[type=submit],
+.container-booking-widget input.btn-primary[type=submit]:hover,
+.container-booking-widget input.btn-primary[type=submit]:focus {
+  color: #fff;
+  background-color: $primary-color;
+  box-shadow: none;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.55);
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 5px 15px;
+  border-color: $primary-color;
+  margin-top: 15px;
+  transition: all .2s ease-out;
+}
+
+.container-booking-widget input.btn-primary[type=submit] {
+  opacity: 0.9
+}
+
+.container-booking-widget input.btn-primary[type=submit]:hover,
+.container-booking-widget input.btn-primary[type=submit]:focus {
+  opacity: 1;
+  border-color: #ce7107;
+  box-shadow: 0 0 3px 3px rgba(0,0,0,.15)
+}
+
+.container-booking-widget .verisign-logo {
+  float: right;
+  max-width: 70px;
+  margin-top: 10px;
+}
+
+
+/* jquery-ui datepicker
+--------------------------------------------------------------------------- */
+
+#ui-datepicker-div {
+  font-size: 87%;
+}
+
+// remove emboss styles
+.ui-widget-header,
+
+.ui-state-default, 
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background-image: none;
+}
+
+.ui-state-default, 
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border-color: #ede4d4;
+}
+
+
+
+/* flexslider
+--------------------------------------------------------------------------- */
+
+.flexslider {
+  background-color: #f0f0f0;
+  float: right;
+  width: 640px;
+  height: 350px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.flex-direction-nav a {
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+.ie8 .flex-direction-nav a {
+  color: #666;
+}
+
+.flex-direction-nav a:hover,
+.flex-direction-nav a:focus {
+  color: #333;
+  outline: 0 none;
+  text-decoration: none;
+}
+
+.lt-ie10 .flexslider .flex-prev,
+.touch .flexslider .flex-prev {
+  left: 10px;
+}
+
+.lt-ie10 .flexslider .flex-next,
+.touch .flexslider .flex-next {
+  right: 10px;
+}
+
+.touch .flexslider .flex-prev,
+.touch .flexslider .flex-next {
+  opacity: 1;
+}
+
+.flex-control-nav {
+  bottom: 20px;
+}
+
+
+
+
+/*  main content
+============================================================================ */
+
+.container-main-content {
+  background-color: #fff;
+  width: 940px;
+  margin: auto;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 20px 10px 60px 10px;
+}
+
+.container-main-content .best-services{
+  margin-bottom: 40px;
+}
+
+.container-main-content .best-apartments,
+.container-main-content .best-polaroids {
+  margin-bottom: 20px;
+}
+
+.container-main-content .best-services ul {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  font-size: 1.4rem;
+
+  // gradient
+  background: #fcfff4;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZmZmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2RmZTVkNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWUxZGMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #fcfff4 0%, #dfe5d7 53%, #e5e1dc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(53%,#dfe5d7), color-stop(100%,#e5e1dc));
+  background: -webkit-linear-gradient(top,  #fcfff4 0%,#dfe5d7 53%,#e5e1dc 100%);
+  background: -o-linear-gradient(top,  #fcfff4 0%,#dfe5d7 53%,#e5e1dc 100%);
+  background: -ms-linear-gradient(top,  #fcfff4 0%,#dfe5d7 53%,#e5e1dc 100%); 
+  background: linear-gradient(to bottom,  #fcfff4 0%,#dfe5d7 53%,#e5e1dc 100%);
+}
+
+.ie8 .container-main-content .best-services ul {
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e5e1dc',GradientType=0);
+}
+
+.container-main-content .best-services li {
+  padding-left: 40px;
+  background: transparent url(../img/best-services-icon.png) no-repeat left center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container-main-content .best-polaroids .container-polaroids {
+  border: 1px solid #a3a3a3;
+  padding: 15px 10px;
+}
+
+.container-main-content .best-polaroids [class*="h2"],
+.container-main-content .best-polaroids img {
+  margin-bottom: 10px;
+  display: block;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc
+}
+
+
+
+
+/*  footer
+============================================================================ */
+
+.container-footer {
+  background-color: $primary-color;
+  padding-top: 25px;
+  min-height: 300px;
+}
+
+.footer-content {
+  width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}

@@ -1,0 +1,392 @@
+{
+  "id": "466f492d",
+  "cfgVersion": 1,
+  "name": "Withinn (Dunp)",
+  "files": {
+    "2e8f9ea2": {
+      "id": "2e8f9ea2",
+      "pid": "466f492d",
+      "name": "README.md",
+      "input": "README.md",
+      "customOutput": false,
+      "type": "Md",
+      "config": {
+        "autoCompile": false,
+        "sanitize": false,
+        "gfm": true
+      }
+    },
+    "19b168e7": {
+      "id": "19b168e7",
+      "pid": "466f492d",
+      "name": "main.scss",
+      "input": "css\\main.scss",
+      "customOutput": false,
+      "type": "Scss",
+      "config": {
+        "autoCompile": true,
+        "lineNumbers": false,
+        "unixNewlines": false,
+        "sourcemaps": false,
+        "debug": false,
+        "compass": false,
+        "fullCompass": false,
+        "outputStyle": "expanded",
+        "autoprefixer": true
+      }
+    },
+    "50ef0fa9": {
+      "id": "50ef0fa9",
+      "pid": "466f492d",
+      "name": "main.js",
+      "input": "js\\main.js",
+      "customOutput": "js\\main.min.js",
+      "type": "Js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "sourcemaps": false
+      }
+    },
+    "d6dc2db1": {
+      "id": "d6dc2db1",
+      "pid": "466f492d",
+      "name": "plugins.js",
+      "input": "js\\plugins.js",
+      "customOutput": false,
+      "type": "Js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "sourcemaps": false
+      }
+    }
+  },
+  "imports": {
+    "de567760": {
+      "id": "de567760",
+      "pid": "466f492d",
+      "path": "css\\vendor\\_bullframe.scss",
+      "parents": [
+        "19b168e7"
+      ]
+    },
+    "c1b69c15": {
+      "id": "c1b69c15",
+      "pid": "466f492d",
+      "path": "css\\vendor\\_custom-bootstrap.scss",
+      "parents": [
+        "19b168e7"
+      ]
+    },
+    "123f1106": {
+      "id": "123f1106",
+      "pid": "466f492d",
+      "path": "css\\vendor\\_flexslider.scss",
+      "parents": [
+        "19b168e7"
+      ]
+    },
+    "cbf6e870": {
+      "id": "cbf6e870",
+      "pid": "466f492d",
+      "path": "css\\vendor\\_font-awesome.scss",
+      "parents": [
+        "19b168e7"
+      ]
+    },
+    "155e543b": {
+      "id": "155e543b",
+      "pid": "466f492d",
+      "path": "css\\vendor\\_animate.scss",
+      "parents": [
+        "19b168e7"
+      ]
+    },
+    "756d6bd9": {
+      "id": "756d6bd9",
+      "pid": "466f492d",
+      "path": "css\\vendor\\_jquery-ui-custom.scss",
+      "parents": [
+        "19b168e7"
+      ]
+    }
+  },
+  "images": {
+    "b97b68c8": {
+      "id": "b97b68c8",
+      "pid": "466f492d",
+      "path": "img\\booking-hamburger.png",
+      "size": 963,
+      "name": "booking-hamburger.png",
+      "type": "Png",
+      "initialSize": 963,
+      "status": "NOT_OPTIMIZED"
+    },
+    "64dce25d": {
+      "id": "64dce25d",
+      "pid": "466f492d",
+      "path": "img\\ico\\apple-touch-icon-precomposed.png",
+      "size": 1076,
+      "name": "apple-touch-icon-precomposed.png",
+      "type": "Png",
+      "initialSize": 1076,
+      "status": "NOT_OPTIMIZED"
+    },
+    "d54a6be6": {
+      "id": "d54a6be6",
+      "pid": "466f492d",
+      "path": "img\\logo-footer.png",
+      "size": 3827,
+      "name": "logo-footer.png",
+      "type": "Png",
+      "initialSize": 3827,
+      "status": "NOT_OPTIMIZED"
+    },
+    "fd7675f3": {
+      "id": "fd7675f3",
+      "pid": "466f492d",
+      "path": "img\\logo.png",
+      "size": 2393,
+      "name": "logo.png",
+      "type": "Png",
+      "initialSize": 2393,
+      "status": "NOT_OPTIMIZED"
+    },
+    "01a56a32": {
+      "id": "01a56a32",
+      "pid": "466f492d",
+      "path": "img\\verisign-logo.png",
+      "size": 4137,
+      "name": "verisign-logo.png",
+      "type": "Png",
+      "initialSize": 4137,
+      "status": "NOT_OPTIMIZED"
+    },
+    "92df045d": {
+      "id": "92df045d",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-bg_flat_75_aaaaaa_40x100.png",
+      "size": 212,
+      "name": "ui-bg_flat_75_aaaaaa_40x100.png",
+      "type": "Png",
+      "initialSize": 212,
+      "status": "NOT_OPTIMIZED"
+    },
+    "a8e62bd5": {
+      "id": "a8e62bd5",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-bg_glass_100_f5f0e5_1x400.png",
+      "size": 354,
+      "name": "ui-bg_glass_100_f5f0e5_1x400.png",
+      "type": "Png",
+      "initialSize": 354,
+      "status": "NOT_OPTIMIZED"
+    },
+    "da0c72e8": {
+      "id": "da0c72e8",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-bg_glass_25_cb842e_1x400.png",
+      "size": 335,
+      "name": "ui-bg_glass_25_cb842e_1x400.png",
+      "type": "Png",
+      "initialSize": 335,
+      "status": "NOT_OPTIMIZED"
+    },
+    "890441b3": {
+      "id": "890441b3",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-bg_glass_70_ede4d4_1x400.png",
+      "size": 351,
+      "name": "ui-bg_glass_70_ede4d4_1x400.png",
+      "type": "Png",
+      "initialSize": 351,
+      "status": "NOT_OPTIMIZED"
+    },
+    "0c1ab9c8": {
+      "id": "0c1ab9c8",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-bg_highlight-hard_100_f4f0ec_1x100.png",
+      "size": 327,
+      "name": "ui-bg_highlight-hard_100_f4f0ec_1x100.png",
+      "type": "Png",
+      "initialSize": 327,
+      "status": "NOT_OPTIMIZED"
+    },
+    "506fb8c8": {
+      "id": "506fb8c8",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-bg_highlight-hard_65_fee4bd_1x100.png",
+      "size": 314,
+      "name": "ui-bg_highlight-hard_65_fee4bd_1x100.png",
+      "type": "Png",
+      "initialSize": 314,
+      "status": "NOT_OPTIMIZED"
+    },
+    "0cd5f138": {
+      "id": "0cd5f138",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-bg_highlight-hard_75_f5f5b5_1x100.png",
+      "size": 323,
+      "name": "ui-bg_highlight-hard_75_f5f5b5_1x100.png",
+      "type": "Png",
+      "initialSize": 323,
+      "status": "NOT_OPTIMIZED"
+    },
+    "6f616cc8": {
+      "id": "6f616cc8",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-bg_inset-soft_100_f4f0ec_1x100.png",
+      "size": 403,
+      "name": "ui-bg_inset-soft_100_f4f0ec_1x100.png",
+      "type": "Png",
+      "initialSize": 403,
+      "status": "NOT_OPTIMIZED"
+    },
+    "032bdc71": {
+      "id": "032bdc71",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-icons_c47a23_256x240.png",
+      "size": 4549,
+      "name": "ui-icons_c47a23_256x240.png",
+      "type": "Png",
+      "initialSize": 4549,
+      "status": "NOT_OPTIMIZED"
+    },
+    "7deb2a98": {
+      "id": "7deb2a98",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-icons_cb672b_256x240.png",
+      "size": 4549,
+      "name": "ui-icons_cb672b_256x240.png",
+      "type": "Png",
+      "initialSize": 4549,
+      "status": "NOT_OPTIMIZED"
+    },
+    "e478efc4": {
+      "id": "e478efc4",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-icons_f08000_256x240.png",
+      "size": 4549,
+      "name": "ui-icons_f08000_256x240.png",
+      "type": "Png",
+      "initialSize": 4549,
+      "status": "NOT_OPTIMIZED"
+    },
+    "b2bb0542": {
+      "id": "b2bb0542",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-icons_f35f07_256x240.png",
+      "size": 4549,
+      "name": "ui-icons_f35f07_256x240.png",
+      "type": "Png",
+      "initialSize": 4549,
+      "status": "NOT_OPTIMIZED"
+    },
+    "c7f26848": {
+      "id": "c7f26848",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-icons_ff7519_256x240.png",
+      "size": 4549,
+      "name": "ui-icons_ff7519_256x240.png",
+      "type": "Png",
+      "initialSize": 4549,
+      "status": "NOT_OPTIMIZED"
+    },
+    "c2493b05": {
+      "id": "c2493b05",
+      "pid": "466f492d",
+      "path": "img\\datepicker\\ui-icons_ffffff_256x240.png",
+      "size": 6299,
+      "name": "ui-icons_ffffff_256x240.png",
+      "type": "Png",
+      "initialSize": 6299,
+      "status": "NOT_OPTIMIZED"
+    },
+    "1ab07834": {
+      "id": "1ab07834",
+      "pid": "466f492d",
+      "path": "img\\home-mock-up.png",
+      "size": 6190559,
+      "name": "home-mock-up.png",
+      "type": "Png",
+      "initialSize": 6190559,
+      "status": "NOT_OPTIMIZED"
+    },
+    "3d892ee6": {
+      "id": "3d892ee6",
+      "pid": "466f492d",
+      "path": "img\\slider\\copertina_1.jpg",
+      "size": 45397,
+      "name": "copertina_1.jpg",
+      "type": "Jpg",
+      "initialSize": 45397,
+      "status": "NOT_OPTIMIZED"
+    },
+    "d655c8a2": {
+      "id": "d655c8a2",
+      "pid": "466f492d",
+      "path": "img\\slider\\copertina_2.jpg",
+      "size": 31322,
+      "name": "copertina_2.jpg",
+      "type": "Jpg",
+      "initialSize": 31322,
+      "status": "NOT_OPTIMIZED"
+    },
+    "b6925e9b": {
+      "id": "b6925e9b",
+      "pid": "466f492d",
+      "path": "img\\slider\\copertina_3.jpg",
+      "size": 34363,
+      "name": "copertina_3.jpg",
+      "type": "Jpg",
+      "initialSize": 34363,
+      "status": "NOT_OPTIMIZED"
+    },
+    "d5f2df36": {
+      "id": "d5f2df36",
+      "pid": "466f492d",
+      "path": "img\\slider\\copertina_4.jpg",
+      "size": 35949,
+      "name": "copertina_4.jpg",
+      "type": "Jpg",
+      "initialSize": 35949,
+      "status": "NOT_OPTIMIZED"
+    }
+  },
+  "config": {
+    "watch": true,
+    "liveRefresh": true,
+    "liveRefreshDelay": 0,
+    "filterPatterns": "",
+    "useCustomServer": false,
+    "customServerUrl": "",
+    "cssPath": "",
+    "jsPath": "js/",
+    "htmlPath": "html/",
+    "minJsPath": "",
+    "htmlExtension": ".html",
+    "cssPathType": "REPLACE_TYPE",
+    "htmlPathType": "REPLACE_TYPE",
+    "jsPathType": "REPLACE_TYPE",
+    "minJsPathType": "RELATIVE_FILEDIR",
+    "htmlTypes": "jade, haml, slim, markdown, md",
+    "cssTypes": "less, sass, stylus, scss, styl",
+    "jsTypes": "coffee, coffeescript, coffeescripts, ls, livescript, livescripts",
+    "cssPreprocessorPath": "",
+    "htmlPreprocessorPath": "",
+    "jsPreprocessorPath": "",
+    "minJsPreprocessorPath": "",
+    "autoprefixerBrowsers": "",
+    "ftpHost": "",
+    "ftpPort": "21",
+    "ftpRemotePath": "",
+    "ftpIgnorePreprocessorFiles": true,
+    "ftpType": "FTP",
+    "ftpExcludePatterns": "",
+    "ftpPassword": "",
+    "ftpUsername": ""
+  }
+}
